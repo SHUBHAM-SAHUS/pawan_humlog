@@ -6,30 +6,45 @@ import logo from "assets/images/logob.png";
 import facebook from "assets/images/face.png";
 import google from "assets/images/google.png";
 import * as authActions from "redux/actions/AuthActions";
-// import "components/auth/jobseeker/Login/node_modules/style/login/login.scss";
+import "style/login/login.scss";
+import { Userrollbtn } from "components/auth/Userrollbtn.js/Userrollbtn";
 
-const GetOTP = ({ history }) => {
-  const { register, handleSubmit } = useForm();
-  // const [contact, setContact] = useState('')
-  // const dispatch = useDispatch();
-  // const getOTP=()=>{debugger
-  //     dispatch(authActions.getOTP({contact})).then(res=>{
-  //         if (res.value.success){
-  //             history.push("login/VerifyOTP")
-  //         }
+// const GetOTP = ({ history }) => {
+//   const { register, handleSubmit } = useForm();
+//   // const [contact, setContact] = useState('')
+//   // const dispatch = useDispatch();
+//   // const getOTP=()=>{debugger
+//   //     dispatch(authActions.getOTP({contact})).then(res=>{
+//   //         if (res.value.success){
+//   //             history.push("login/VerifyOTP")
+//   //         }
 
-  //     }).catch(err=> history.push("login/VerifyOTP"))
-  // }
+//   //     }).catch(err=> history.push("login/VerifyOTP"))
+//   // }
 
-  const onSubmit = (data) => {
-    debugger;
+//   const onSubmit = (data) => {
+//     debugger;
+
+//     console.log(data);
+//   };
+
+export const JobSeekerlogin = ({ history }) => {
+    const { register, handleSubmit } = useForm();
+ 
+      const onSubmit = (data) => {
+        history.push("login/VerifyOTP")
+
+    
+
 
     console.log(data);
   };
 
-  return (
-    <>
-      <div>
+
+    return(
+      <>
+        
+        <div>
         {/* <Input name="contact" onChange={e=> setContact(e.target.value)}/>
    <Button onClick={getOTP} color="primary">get otp</Button> */}
 
@@ -46,7 +61,7 @@ const GetOTP = ({ history }) => {
                     हिन्दी/<strong className="logo_cc">English</strong>
                   </h2>
                 </div>
-                <div className="d-flex  justify-content-between px-3 mt-2 justify-content-center">
+                {/* <div className="d-flex  justify-content-between px-3 mt-2 justify-content-center">
                   <button className="btn_b mr-1"> Member </button>
                   <button className="btn_a  ml-1"> Employer </button>
                 </div>
@@ -54,7 +69,9 @@ const GetOTP = ({ history }) => {
                 <div className="d-flex  justify-content-between px-3 mt-2 justify-content-center mt-2 mx-auto">
                   <button className="btn_b mr-1 px-5"> Sarthi </button>
                   <button className="btn_b  ml-1 px-5"> Guru </button>
-                </div>
+                </div> */}
+
+                <Userrollbtn/>
 
                 <div className=" mt-3">
                   <h2 className="login_ba text-center">
@@ -120,7 +137,7 @@ const GetOTP = ({ history }) => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
-export default GetOTP;
+
+      </>
+    )
+}

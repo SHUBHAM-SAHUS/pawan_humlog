@@ -1,0 +1,25 @@
+@import "../common/globl.scss";
+@import "../common/btn.scss";
+
+h1 {
+  color: red;
+}
+
+.ya {
+  font-size: 15px;
+  font-weight: 500;
+  color: $dark_blue;
+}
+
+.yb {
+  @extend .ya;
+  font-size: 12px;
+  font-weight: 400;
+  color: $light_blue;
+}
+
+.btn_bdr {
+  width: 100%;
+  background-color: #ffff;
+  box-shadow: 2px 4px 8px 4px #ddd;
+}

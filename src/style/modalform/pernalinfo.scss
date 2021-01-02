@@ -1,0 +1,46 @@
+@import "../common/globl.scss";
+@import "../common/btn.scss";
+
+.prnl_head_aa{
+               color:$dark_blue;
+               font-size:15px;
+               font-weight:500;
+
+}
+
+.input_fld{
+       border:none;
+       outline:none;
+       border-bottom:1px solid $grey;
+}
+
+.lbl_a{
+    color:$grey;
+    font-size:15px;
+    //  color:$gey;
+}
+
+
+.detail_btn_ca{
+    width: 45% !important;
+    border: 1px solid $dark_blue;
+    outline: none;
+    padding: 2% 2% 2% 2%;
+    color: $dark_blue;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.btn_bdr {
+    width: 100%;
+    background-color: #ffff;
+    box-shadow: 2px 4px 8px 4px #ddd;
+  }
+
+  .ftr{
+      @extend .btn_bdr;
+  }

@@ -19,7 +19,7 @@ const VerifyOTP =({history}) => {
             history.push("/")
         }).catch(err=> history.push("/"))
     }
-    const onSubmit = data => {debugger
+    const onSubmit = data => {
 
         console.log(data)
     
@@ -31,6 +31,7 @@ const VerifyOTP =({history}) => {
    <Button onClick={verifyOTP} color="primary" variant="contained">varify otp</Button> */}
 
     <div className="top_main">
+      
       <div className="row  no-gutters">
         <div className="col-md-8 otp_ra">
           {/* <img src={forest} width="100%" alt="forest" /> */}
@@ -95,7 +96,8 @@ const VerifyOTP =({history}) => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+  
   </>
     //  <div className="text-center">
     //  <Input name="otp" onChange={e=> setNumber(e.target.value)}/>

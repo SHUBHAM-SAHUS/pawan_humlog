@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import logo from "assets/images/logob.png";
 import facebook from "assets/images/face.png";
 import google from "assets/images/google.png";
-import "style/login/login.scss";
+// import "components/auth/jobseeker/Login/node_modules/style/login/login.scss";
 // user action
 import { FieldConfig } from "./FieldConfig.js";
 

@@ -1,13 +1,20 @@
 // public routes
 import loginJobseeker from "components/auth/login/loginJobseeker"
-import VerifyOTP from "components/auth/login/verifyOtp";
 import LoginForm from "components/auth/login/loginRecruiter";
+import { JobSeekerlogin } from "components/auth/jobseeker/Login/Jobseekerlogin";
+import VerifyOTP from "components/auth/jobseeker/Login/verifyOtp";
+import { BasicDetails } from "components/jobseeker/basicdetail/BasicDetails";
 
+
+
+
+           
+  
 export const publicRoutes = [
   {
-    key: "loginJobseeker",
+    key: "BasicaDetails",
     path: "/",
-    component: loginJobseeker,
+    component: BasicDetails,
     exact: true
   },
   {

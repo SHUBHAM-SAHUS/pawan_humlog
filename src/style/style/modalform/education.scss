@@ -1,0 +1,43 @@
+@import "../common/globl.scss";
+@import "../common/btn.scss";
+
+
+.pp {
+  border: 2px solid red;
+  background-color: red;
+}
+
+.form-check-input {
+  border: 1px solid red;
+}
+
+.btn_bdr {
+  width: 100%;
+  background-color: #ffff;
+  box-shadow: 2px 4px 8px 4px #ddd;
+}
+
+.tttle{
+  color:$light_blue;
+  font-size:15px;
+}
+
+.pa,.pb{
+  color:#999999;
+  font-size:15px;
+  font-weight:400;
+   text-transform:capitalize;
+}
+
+.detail_btn_ca{
+  width: 35%;
+  border: 1px solid $dark_blue;
+  outline: none;
+  padding: 1% 1% 1% 1%;
+  color: $dark_blue;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
