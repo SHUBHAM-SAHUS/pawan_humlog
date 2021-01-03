@@ -4,17 +4,23 @@ import LoginForm from "components/auth/login/loginRecruiter";
 import { JobSeekerlogin } from "components/auth/jobseeker/Login/Jobseekerlogin";
 import VerifyOTP from "components/auth/jobseeker/Login/verifyOtp";
 import { BasicDetails } from "components/jobseeker/basicdetail/BasicDetails";
+import { Userprofile } from "components/jobseeker/userprofile/Userprofile";
+import { Aboutself } from "components/formmodal/aboutself/Aboutself";
+import { Educatiofrm } from "components/formmodal/education/Educationfrm";
+import { Industryinterested } from "components/formmodal/industry/Industryinteresred";
+import { Userprofileinput } from "components/formmodal/userprofie/Userprofileinput";
+import { Progressbar } from "components/formmodal/progressbar/Progressbar";
+import { Jobmatch } from "components/jobseeker/jobmatch/Jobmatch";
 
 
 
 
-           
-  
+
 export const publicRoutes = [
   {
-    key: "BasicaDetails",
+    key: "Jobmatch",
     path: "/",
-    component: BasicDetails,
+    component:Jobmatch,
     exact: true
   },
   {
