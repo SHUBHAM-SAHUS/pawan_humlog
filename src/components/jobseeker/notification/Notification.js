@@ -1,7 +1,12 @@
+import React,{useState} from "react";
 import men from "../../../assets/images/men.jpg";
+import {Select,MenuItem} from  "@material-ui/core";
 import "./notification.scss";
 import { AiOutlineDelete, AiOutlineMinusCircle } from "react-icons/ai";
 import { ImSwitch } from "react-icons/im";
+
+
+
 import { AiOutlineSetting } from "react-icons/ai";
 import {
   DropdownButton,
@@ -10,6 +15,13 @@ import {
   Dropdown,
 } from "react-bootstrap";
 export const Notification = () => {
+
+  const [choice,setchoice] = useState("")
+
+  const update=(e)=>{
+    console.log(e.target.value);
+  }
+
   return (
     <>
       <div className="main_notification border">
@@ -38,7 +50,7 @@ export const Notification = () => {
               {/* start */}
 
               <div className="mb-2">
-                <Dropdown>
+                {/* <Dropdown>
                   <Dropdown.Toggle variant="" id="dropdown-basic">
                     ....
                   </Dropdown.Toggle>
@@ -60,7 +72,19 @@ export const Notification = () => {
                       <AiOutlineSetting /> Setting{" "}
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
+
+                <Select value={choice} displayEmpty
+                onChange={update}
+                >
+                   <MenuItem value="" disabled >... </MenuItem>
+                   <MenuItem value={2}>php </MenuItem>
+                   <MenuItem value={3}>java </MenuItem>
+                   <MenuItem value={4}>css</MenuItem>
+                   <MenuItem value={5}>html </MenuItem>
+                  </Select>
+
+                
               </div>
             </div>
           </div>

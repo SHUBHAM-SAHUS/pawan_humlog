@@ -11,6 +11,7 @@ import { Industryinterested } from "components/formmodal/industry/Industryintere
 import { Userprofileinput } from "components/formmodal/userprofie/Userprofileinput";
 import { Progressbar } from "components/formmodal/progressbar/Progressbar";
 import { Jobmatch } from "components/jobseeker/jobmatch/Jobmatch";
+import { Notification } from "components/jobseeker/notification/Notification";
 
 
 
@@ -18,9 +19,9 @@ import { Jobmatch } from "components/jobseeker/jobmatch/Jobmatch";
 
 export const publicRoutes = [
   {
-    key: "Jobmatch",
+    key: "Notification",
     path: "/",
-    component:Jobmatch,
+    component:Notification,
     exact: true
   },
   {
