@@ -8,18 +8,13 @@ import { ImSwitch } from "react-icons/im";
 
 
 import { AiOutlineSetting } from "react-icons/ai";
-import {
-  DropdownButton,
-  SplitButton,
-  ButtonGroup,
-  Dropdown,
-} from "react-bootstrap";
+
 export const Notification = () => {
 
   const [choice,setchoice] = useState("")
 
   const update=(e)=>{
-    console.log(e.target.value);
+    alert(e.target.value);
   }
 
   return (
@@ -50,38 +45,17 @@ export const Notification = () => {
               {/* start */}
 
               <div className="mb-2">
-                {/* <Dropdown>
-                  <Dropdown.Toggle variant="" id="dropdown-basic">
-                    ....
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">
-                      {" "}
-                      <AiOutlineDelete /> Delete{" "}
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      <AiOutlineMinusCircle /> Unfollow{" "}
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      {" "}
-                      <ImSwitch /> TournOff{" "}
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      {" "}
-                      <AiOutlineSetting /> Setting{" "}
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown> */}
+             
+              
 
                 <Select value={choice} displayEmpty
                 onChange={update}
                 >
-                   <MenuItem value="" disabled >... </MenuItem>
-                   <MenuItem value={2}>php </MenuItem>
-                   <MenuItem value={3}>java </MenuItem>
-                   <MenuItem value={4}>css</MenuItem>
-                   <MenuItem value={5}>html </MenuItem>
+                   <MenuItem value={choice}  >... </MenuItem>
+                   <MenuItem value={"delete"}>  <AiOutlineDelete /> Delete </MenuItem>
+                   <MenuItem value={"unfollow"}><AiOutlineMinusCircle /> Unfollow{" "} </MenuItem>
+                   <MenuItem value={"tourn off"}><ImSwitch /> TournOff{" "}</MenuItem>
+                   <MenuItem value={"setting"}><AiOutlineSetting /> Setting{" "} </MenuItem>
                   </Select>
 
                 
