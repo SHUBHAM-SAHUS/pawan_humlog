@@ -51,7 +51,7 @@ export const Notification = () => {
                 <Select value={choice} displayEmpty
                 onChange={update}
                 >
-                   <MenuItem value={choice}  >... </MenuItem>
+                   <MenuItem value={choice}  > </MenuItem>
                    <MenuItem value={"delete"}>  <AiOutlineDelete /> Delete </MenuItem>
                    <MenuItem value={"unfollow"}><AiOutlineMinusCircle /> Unfollow{" "} </MenuItem>
                    <MenuItem value={"tourn off"}><ImSwitch /> TournOff{" "}</MenuItem>
