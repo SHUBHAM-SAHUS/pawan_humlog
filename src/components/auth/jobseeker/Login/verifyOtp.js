@@ -16,12 +16,13 @@ const VerifyOTP =({history}) => {
     const dispatch = useDispatch();
     const verifyOTP=()=>{
         dispatch(authActions.varifyOTP({number})).then(res=>{
-            history.push("/")
-        }).catch(err=> history.push("/"))
+            history.push("/user/basicdetail")
+        }).catch(err=> history.push("/user/basicdetail"))
     }
     const onSubmit = data => {
 
         console.log(data)
+        history.push("/user/basicdetail");
     
     }
  return(

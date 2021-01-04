@@ -11,11 +11,13 @@ import { AiOutlineHome } from "react-icons/ai";
 // import { Commonbtn } from "../commoncomponent/Commonbtn";
 import {useForm} from "react-hook-form"
 import { register } from "serviceWorkerRegistration";
-export const BasicDetails = () => {
+export const BasicDetails = ({history}) => {
 
   const {register,handleSubmit} = useForm();
     
  const update=(val)=>{
+  history.push("/user/basicdetail/jobinterested")
+
   console.log(val);
  }
 

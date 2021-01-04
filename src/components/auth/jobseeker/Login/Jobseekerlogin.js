@@ -29,22 +29,17 @@ import { Userrollbtn } from "components/auth/Userrollbtn.js/Userrollbtn";
 //   };
 
 export const JobSeekerlogin = ({ history }) => {
-    const { register, handleSubmit } = useForm();
- 
-      const onSubmit = (data) => {
-        history.push("login/VerifyOTP")
+  const { register, handleSubmit } = useForm();
 
-    
-
+  const onSubmit = (data) => {
+    history.push("login/VerifyOTP");
 
     console.log(data);
   };
 
-
-    return(
-      <>
-        
-        <div>
+  return (
+    <>
+      <div>
         {/* <Input name="contact" onChange={e=> setContact(e.target.value)}/>
    <Button onClick={getOTP} color="primary">get otp</Button> */}
 
@@ -71,7 +66,7 @@ export const JobSeekerlogin = ({ history }) => {
                   <button className="btn_b  ml-1 px-5"> Guru </button>
                 </div> */}
 
-                <Userrollbtn/>
+                <Userrollbtn />
 
                 <div className=" mt-3">
                   <h2 className="login_ba text-center">
@@ -137,7 +132,6 @@ export const JobSeekerlogin = ({ history }) => {
           </div>
         </div>
       </div>
-
-      </>
-    )
-}
+    </>
+  );
+};
