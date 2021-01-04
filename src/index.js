@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../src/style/style/common/space.scss";
 import Main from "./router";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';

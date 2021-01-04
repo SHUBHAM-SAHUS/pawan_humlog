@@ -21,9 +21,9 @@ import { Header } from "components/commoncomponent/header/Header";
     
 export const publicRoutes = [
   {
-    key: "Header",
+    key: "JobSeekerlogin",
     path: "/",
-    component:Header,
+    component:JobSeekerlogin,
     exact: true,
   },
   {

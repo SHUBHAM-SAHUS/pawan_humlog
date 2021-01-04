@@ -1,4 +1,6 @@
+
 import React, { useState } from "react";
+import { Header } from "components/commoncomponent/header/Header";
 // ui component for page layout
 // import Header from "./components/shared/header";
 // import Sidebar from "./components/shared/sidebar";
@@ -18,25 +20,10 @@ const App = ({ children }) => {
   };
 
   return (
-      <div
-          className={`pr_dash_main_wrapper float_left ${currentTheme} ${resSidebarToggled ? "left_sidebar_visible" : ""}`}
-
-          onClick={(e) => {
-    if (categoryFilter && e.target.name !== "category-search-dropdown") handleCategoryFilter(false);
-  }}
-          >
-        <div className="appContainer">
-          <div className="gd_fav_right_cont_box">
-            
-            <main className="app-content-harmony pr_dash_right_boxes_main float_left">
+             <>
+               <Header/>        
               {children}
-            </main>
-          </div>
-          <div className="gd_fav_bottom_footer float_left">
-            <p>© 2020 Videosweat, Inc. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
+      </>
   );
 };
 

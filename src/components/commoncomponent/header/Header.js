@@ -1,8 +1,8 @@
 import React from "react";
 import "./header.scss";
 import { useLocation } from "react-router-dom";
-import logowa from "../images/humlogwa.png";
-import logowb from "../images/hunlogwb.png";
+import logowa from "assets/images/humlogwa.png";
+import logowb from "assets/images/hunlogwb.png";
 import { GoThreeBars } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
 export const Header = () => {
