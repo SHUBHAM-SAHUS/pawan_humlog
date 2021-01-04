@@ -6,7 +6,7 @@ import { Nav } from "react-bootstrap";
 
 import { RiGroupLine } from "react-icons/ri";
 import { BsBriefcase, BsBell } from "react-icons/bs";
-import dashboard from "../images/dashboard.png";
+import dashboard from "assets/images/dashboard.png";
 
 // import {BsBriefcase} from "react-icons/bs";
 
