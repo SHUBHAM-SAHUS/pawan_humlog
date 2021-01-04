@@ -9,15 +9,14 @@ import { FcBusinessman } from "react-icons/fc";
 import { FaAward } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 // import { Commonbtn } from "../commoncomponent/Commonbtn";
-import {useForm} from "react-hook-form"
+import { useForm } from "react-hook-form";
 import { register } from "serviceWorkerRegistration";
 export const BasicDetails = () => {
+  const { register, handleSubmit } = useForm();
 
-  const {register,handleSubmit} = useForm();
-    
- const update=(val)=>{
-  console.log(val);
- }
+  const update = (val) => {
+    console.log(val);
+  };
 
   return (
     <>
@@ -26,7 +25,6 @@ export const BasicDetails = () => {
         <div className="container">
           <div className="row no-gutters">
             <div className="col-12 col-lg-5  px-0 px-lg-2 pt-3">
-
               <form onSubmit={handleSubmit(update)}>
                 <div className="form-group mt-3">
                   <label for="name" className=" control-label">
@@ -45,7 +43,7 @@ export const BasicDetails = () => {
                         name="name"
                         id="name"
                         placeholder="Enter your full Name here"
-                         ref={register}
+                        ref={register}
                       />
                     </div>
                   </div>
@@ -60,7 +58,6 @@ export const BasicDetails = () => {
                     </b>
                   </label>
 
-
                   <div className=" d-flex justify-content-between">
                     <div className="form-check detail_btn_a text-center aaa">
                       <input
@@ -70,12 +67,8 @@ export const BasicDetails = () => {
                         id="male"
                         value="male"
                         ref={register}
-                      
                       />
-                      <label
-                        className="form-check-label "
-                        for="male"
-                      >
+                      <label className="form-check-label " for="male">
                         male
                       </label>
                     </div>
@@ -88,19 +81,13 @@ export const BasicDetails = () => {
                         value="female"
                         id="female"
                         ref={register}
-
                       />
-                      <label
-                        className="form-check-label "
-                        for="female"
-                      >
+                      <label className="form-check-label " for="female">
                         Female
                       </label>
                     </div>
                   </div>
                 </div>
-
-
 
                 <div className="form-group mt-2">
                   <label for="email" className="cols-sm-2 control-label">
@@ -122,10 +109,7 @@ export const BasicDetails = () => {
                         value="18-24"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="18-24"
-                      >
+                      <label className="form-check-label " for="18-24">
                         18-24 Yrs
                       </label>
                     </div>
@@ -139,10 +123,7 @@ export const BasicDetails = () => {
                         value="25-30"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="25-30"
-                      >
+                      <label className="form-check-label " for="25-30">
                         25-30 Yrs
                       </label>
                     </div>
@@ -156,10 +137,7 @@ export const BasicDetails = () => {
                         value="31-35"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="31-35"
-                      >
+                      <label className="form-check-label " for="31-35">
                         31-35 Yrs
                       </label>
                     </div>
@@ -173,17 +151,12 @@ export const BasicDetails = () => {
                         value="36+ yrs"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="36+ yrs"
-                      >
+                      <label className="form-check-label " for="36+ yrs">
                         36+ Yrs
                       </label>
                     </div>
                   </div>
                 </div>
-
-
 
                 <div className="form-group mt-2">
                   <label for="email" className="cols-sm-2 control-label">
@@ -195,7 +168,7 @@ export const BasicDetails = () => {
                     </b>
                   </label>
 
-                 <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-between">
                     <div className="form-check detail_btn_cb text-center">
                       <input
                         className="form-check-input d-none"
@@ -205,10 +178,7 @@ export const BasicDetails = () => {
                         id="below 10th"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="below 10th"
-                      >
+                      <label className="form-check-label " for="below 10th">
                         below 10th
                       </label>
                     </div>
@@ -222,10 +192,7 @@ export const BasicDetails = () => {
                         ref={register}
                         value="10th pass"
                       />
-                      <label
-                        className="form-check-label "
-                        for="10th pass"
-                      >
+                      <label className="form-check-label " for="10th pass">
                         10th Pass
                       </label>
                     </div>
@@ -238,12 +205,8 @@ export const BasicDetails = () => {
                         id="12th Pass"
                         ref={register}
                         value="12th Pass"
-                      
                       />
-                      <label
-                        className="form-check-label "
-                        for="12th Pass"
-                      >
+                      <label className="form-check-label " for="12th Pass">
                         12th Pass
                       </label>
                     </div>
@@ -267,8 +230,6 @@ export const BasicDetails = () => {
                   </div>
                 </div>
 
-
-
                 <div className="form-group mt-2">
                   <label for="email" className="cols-sm-2 control-label">
                     <FcBusinessman className="detail_icon_user" />
@@ -291,10 +252,7 @@ export const BasicDetails = () => {
                         value="yes"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="yes"
-                      >
+                      <label className="form-check-label " for="yes">
                         yes
                       </label>
                     </div>
@@ -308,17 +266,12 @@ export const BasicDetails = () => {
                         value="No"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="No"
-                      >
+                      <label className="form-check-label " for="No">
                         No
                       </label>
                     </div>
                   </div>
                 </div>
-
-
 
                 <div className="form-group mt-2">
                   <label for="email" className="cols-sm-2 control-label">
@@ -342,10 +295,7 @@ export const BasicDetails = () => {
                         value="yess"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="yess"
-                      >
+                      <label className="form-check-label " for="yess">
                         yes
                       </label>
                     </div>
@@ -359,10 +309,7 @@ export const BasicDetails = () => {
                         value="noo"
                         ref={register}
                       />
-                      <label
-                        className="form-check-label "
-                        for="noo"
-                      >
+                      <label className="form-check-label " for="noo">
                         No
                       </label>
                     </div>
@@ -395,7 +342,10 @@ export const BasicDetails = () => {
                 </div>
 
                 <div className="">
-                <button className="common_btn" type="submit"> Save   </button>
+                  <button className="common_btn" type="submit">
+                    {" "}
+                    Save{" "}
+                  </button>
                 </div>
               </form>
             </div>

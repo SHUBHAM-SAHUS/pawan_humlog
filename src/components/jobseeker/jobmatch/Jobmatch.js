@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './jobmatch.scss'
+import "./jobmatch.scss";
 import swiggy from "../../../assets/images/swiggy.png";
 import { MdAttachMoney } from "react-icons/md";
 import { VscBriefcase } from "react-icons/vsc";
